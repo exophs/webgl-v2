@@ -188,7 +188,7 @@ function startGUI () {
     gui.add(config, 'DENSITY_DISSIPATION', 0, 4.0).name('density diffusion');
     gui.add(config, 'VELOCITY_DISSIPATION', 0, 4.0).name('velocity diffusion');
     gui.add(config, 'PRESSURE', 0.0, 1.0).name('pressure');
-    gui.add(config, 'CURL', 0, 1000).name('vorticity').step(1);
+    gui.add(config, 'CURL', 0, 50).name('vorticity').step(1);
     gui.add(config, 'SPLAT_RADIUS', 0.01, 1.0).name('splat radius');
     gui.add(config, 'SHADING').name('shading').onFinishChange(updateKeywords);
     gui.add(config, 'COLORFUL').name('colorful');
